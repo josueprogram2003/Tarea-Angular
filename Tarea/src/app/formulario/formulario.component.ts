@@ -27,12 +27,12 @@ constructor() {
       },
         {
         titulo:"Python",
-        stock:"3",
+        stock:"5",
         descripcion:"El mejor libro de Python de la vida"
       },
         {
         titulo:"Java",
-        stock:"3",
+        stock:"6",
         descripcion:"El mejor libro de Java de la vida"
       }
     ]
@@ -75,6 +75,7 @@ constructor() {
     let pos = this.libro.findIndex((libros)=> {return libros.titulo==li.titulo});
     this.libro.splice(pos , 1);
     console.log(this.libro);
+    this.button="Agregar";
     this.limpiar();
   }
 
